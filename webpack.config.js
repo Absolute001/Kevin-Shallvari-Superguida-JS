@@ -8,7 +8,8 @@ module.exports={
       filename: 'main.js',
       path: path.resolve(__dirname, 'dist')},
     plugins: [
-        new Dotenv()
-    ],
-  target: "node"
+        new Dotenv({
+          path: "./.env"
+        })
+    ]
 }
