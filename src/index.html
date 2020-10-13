@@ -14,138 +14,130 @@
 </head>
 
 <body>
-    <main>
-        <div class="container">
-            <div class="row">
-                <form class="form-inline col-12 mt-3 mt-md-5 px-md-5">
-                    <input type="search" class="form-control col-8 col-md-10" placeholder="Search..."
-                        aria-label="Search">
-                    <button type="submit" class="ml-1 btn btn-primary btn-md col col-md "
-                        aria-label="SearchBtn">Submit</button>
-                </form>
+    <main class="container animate__animated main">
+        <form>
+            <div class="row mt-3 px-3 mt-md-4 mt-lg-5">
+                <input type="search" class="form-control col-8 mr-2" placeholder="Search..." aria-label="Search">
+                <button type="submit" class="btn btn btn-primary btn-md col" aria-label="SearchBtn">Submit</button>
             </div>
-        </div>
+        </form>
 
-        <section class="home container animate__animated">
-            <div class="jumbotron bg-light py-3 mb-3 mt-3">
+        <div class="row px-md- px-3 animate__animated home">
+            <div class="jumbotron bg-light py-3 mb-3 mt-3 mt-lg-5">
                 <h1>Welcome To Simple Weather</h1>
                 <p class="lead">This is a simple Weather Website, you can search the forecast info of any
                     location using the searchbar</p>
                 <hr class="my-1">
                 <p>Or you can search the forecast for your actual position with the button below</p>
             </div>
-        </section>
-
+        </div>
 
         <section class="forecastDisplay container animate__animated mt-1">
 
-            <div class="container">
-                <div class="row">
-                    <h2><span class="badge badge-light my-1 "></span></h2>
-                </div>
+
+            <div class="row">
+                <div class="alert-light cityAlert text-center col-12 mx-auto my-2 my-md-4"></div>
             </div>
-            <ul class="list-unstyled mx-md-4">
-                <li class="media px-md-5 mb-2 ">
-                    <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
-                        class=" mx-2 my-2" alt="...">
-                        <p class="text-center" aria-label="icon-label"></p>
-                    </div>
-                    <div class="media-body">
-                        <h5 class="text-center day mt-2"></h5>
-                        <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
-                                class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
-                        </span>
-                        <div class="values mt-2">
-                            <p class="max_temp_display"></p>
-                            <p class="min_temp_display"></p>
-                            <p class="wind_display"></p>
+
+
+            <div class="row">
+                <ul class="list-unstyled w-100">
+                    <li class="media mb-2 mb-md-4 ">
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" class=" ml-3 mt-3 ml-lg-5"
+                                alt="...">
+                            <p class="text-center ml-3 ml-lg-5 icon-label"></p>
                         </div>
-                    </div>
-                    </div>
-                </li>
-                <li class="media px-md-5 mb-2 ">
-                    <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
-                        class=" mx-2 my-2" alt="...">
-                        <span>
-                            <p class="text-center" aria-label="icon-label"></p>
-                        </span></div>
-                    <div class="media-body">
-                        <h5 class="text-center day mt-2"></h5>
-                        <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
-                                class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
-                        </span>
-                        <div class="values mt-2">
-                            <p class="max_temp_display"></p>
-                            <p class="min_temp_display"></p>
-                            <p class="wind_display"></p>
+                        <div class="media-body">
+                            <h5 class="text-center day mt-2"></h5>
+                            <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
+                                    class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
+                            </span>
+                            <div class="values mt-2">
+                                <p class="max_temp_display"></p>
+                                <p class="min_temp_display"></p>
+                                <p class="wind_display"></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="media px-md-5 mb-2 ">
-                    <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
-                        class=" mx-2 my-2" alt="...">
-                        <span>
-                            <p class="text-center" aria-label="icon-label"></p>
-                        </span></div>
-                    <div class="media-body">
-                        <h5 class="text-center day mt-2"></h5>
-                        <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
-                                class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
-                        </span>
-                        <div class="values mt-2">
-                            <p class="max_temp_display"></p>
-                            <p class="min_temp_display"></p>
-                            <p class="wind_display"></p>
+                    </li>
+                    <li class="media mb-2 mb-md-4 ">
+
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" class=" ml-3 mt-3 ml-lg-5"
+                                alt="...">
+                            <p class="text-center ml-3 ml-lg-5 icon-label"></p>
+                        </div>                        <div class="media-body">
+                            <h5 class="text-center day mt-2"></h5>
+                            <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
+                                    class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
+                            </span>
+                            <div class="values mt-2">
+                                <p class="max_temp_display"></p>
+                                <p class="min_temp_display"></p>
+                                <p class="wind_display"></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="media px-md-5 mb-2 ">
-                    <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
-                        class=" mx-2 my-2" alt="...">
-                        <span>
-                            <p class="text-center" aria-label="icon-label"></p>
-                        </span></div>
-                    <div class="media-body">
-                        <h5 class="text-center day mt-2"></h5>
-                        <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
-                                class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
-                        </span>
-                        <div class="values mt-2">
-                            <p class="max_temp_display"></p>
-                            <p class="min_temp_display"></p>
-                            <p class="wind_display"></p>
+                    </li>
+                    <li class="media mb-2 mb-md-4 ">
+
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" class=" ml-3 mt-3 ml-lg-5"
+                                alt="...">
+                            <p class="text-center ml-3 ml-lg-5 icon-label"></p>
+                        </div>                        <div class="media-body">
+                            <h5 class="text-center day mt-2"></h5>
+                            <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
+                                    class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
+                            </span>
+                            <div class="values mt-2">
+                                <p class="max_temp_display"></p>
+                                <p class="min_temp_display"></p>
+                                <p class="wind_display"></p>
+                            </div>
                         </div>
-                    </div>
-                <li class="media px-md-5 mb-2 ">
-                    <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA="
-                        class=" mx-2 my-2" alt="...">
-                        <span>
-                            <p class="text-center" aria-label="icon-label"></p>
-                        </span></div>
-                    <div class="media-body">
-                        <h5 class="text-center day mt-2"></h5>
-                        <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
-                                class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
-                        </span>
-                        <div class="values mt-2">
-                            <p class="max_temp_display"></p>
-                            <p class="min_temp_display"></p>
-                            <p class="wind_display"></p>
+                    </li>
+                    <li class="media mb-2 mb-md-4 ">
+
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" class=" ml-3 mt-3 ml-lg-5"
+                                alt="...">
+                            <p class="text-center ml-3 ml-lg-5 icon-label"></p>
+                        </div>                        <div class="media-body">
+                            <h5 class="text-center day mt-2"></h5>
+                            <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
+                                    class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
+                            </span>
+                            <div class="values mt-2">
+                                <p class="max_temp_display"></p>
+                                <p class="min_temp_display"></p>
+                                <p class="wind_display"></p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                </li>
-            </ul>
+                    <li class="media ">
+
+                        <div><img src="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=" class=" ml-3 mt-3 ml-lg-5"
+                                alt="...">
+                            <p class="text-center ml-3 ml-lg-5 icon-label"></p>
+                        </div>                        <div class="media-body">
+                            <h5 class="text-center day mt-2"></h5>
+                            <span class="icons"><i class="fas fa-thermometer-three-quarters fa-2x"></i><i
+                                    class="fas fa-thermometer-empty fa-2x"></i><i class="fas fa-wind fa-2x"></i>
+                            </span>
+                            <div class="values mt-2">
+                                <p class="max_temp_display"></p>
+                                <p class="min_temp_display"></p>
+                                <p class="wind_display"></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <div class="container">
-            <div class="row px-3">
-                <a class="btn btn-primary btn-lg col-12" role="submit" aria-label="geoLoc"> Find Me </a>
-            </div>
+
+        <div class="row px-3 px-md-3 mt-lg-3">
+            <a class="btn btn-primary btn-lg col-12 animate__animated" role="submit" aria-label="geoLoc"> Find Me </a>
         </div>
+
+
     </main>
 
-    <footer class="container-fluid bg-transparent fixed-bottom">
+    <footer class="container-fluid bg-transparent fixed-bottom animate__animated">
         <div class="row" id="social-icons">
             <span class="col-4 text-center p-2"><a href="https://www.instagram.com/kevin.leonardo.sh/?hl=it"
                     target="blank"><i class="fab fa-instagram fa-2x"></i></a></span>
@@ -170,7 +162,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
         integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c"
         crossorigin="anonymous"></script>
-    <script src="/dist/main.js"></script>
+    <script src="/src/index.js"></script>
 </body>
 
 </html>

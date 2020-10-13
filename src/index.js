@@ -5,13 +5,13 @@ const forecastDisplay = document.querySelector(".forecastDisplay");
 const searchBtn = document.querySelector("[aria-label='SearchBtn']");
 const searchBox = document.querySelector("[aria-label='Search']");
 const geoLoc = document.querySelector("[aria-label='geoLoc']");
-const iconLabel = document.querySelectorAll("[aria-label='icon-label']")
+const iconLabel = document.querySelectorAll(".icon-label")
 const media = document.querySelectorAll(".media");
 const home = document.querySelector(".home");
 const dayBg = document.querySelectorAll("img");
 const footer = document.querySelector("footer");
 const suggestions = document.querySelector(".suggestions");
-const cityAlert = document.querySelector(".badge");
+const cityAlert = document.querySelector(".cityAlert");
 
 const dayName = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
 const forecast = new Array();
@@ -22,8 +22,9 @@ const daysIndex = new Array();
 const daysOfWeek = new Array();
 const wind = new Array();
 
-const baseURL = "https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/";
-const apiKey = process.env.API_KEY;
+const baseURL = "http://api.openweathermap.org/data/2.5/";
+//const apiKey = process.env.API_KEY;
+const apiKey ="9dbc6ef71ee7d0814e313bbe5e2f5dcb";
 
 function getWeather(query) {
     if (searchBox.value === "") {
@@ -69,7 +70,9 @@ function displayWeather() {
     home.classList.add("animate__fadeOutLeft");
     forecastDisplay.style.display = "inherit";
     forecastDisplay.classList.add("animate__fadeInUp");
+    geoLoc.classList.add("animate__fadeInUp");
     footer.classList.remove("fixed-bottom");
+    footer.classList.add("animate_fadeInUps")
     home.style.height = "0px";
     for (let i = 0; i < forecast.length; i++) {
         if (forecast[i] === "Clear") {
@@ -101,6 +104,7 @@ geoLoc.addEventListener("click", () =>
                 return weather.json();
             }).then(extractInfo);
             forecastDisplay.classList.remove("animate__fadeInUp");
+            geoLoc.classList.remove("animate__fadeInUp");
         })
 
 );
@@ -112,12 +116,14 @@ searchBox.addEventListener("keypress", function (e) {
         searchBox.value = "";
     }
     forecastDisplay.classList.remove("animate__fadeInUp");
+    geoLoc.classList.remove("animate__fadeInUp");
+
 });
 searchBtn.addEventListener("click", function (e) {
     e.preventDefault();
     getWeather(searchBox.value);
     searchBox.value = "";
     forecastDisplay.classList.remove("animate__fadeInUp");
-});
+    geoLoc.classList.remoxe("animate__fadeInUp");
 
-//gitignore
+});

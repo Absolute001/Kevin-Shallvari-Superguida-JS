@@ -8,6 +8,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    max-height: 100%;
 }
 
 .jumbotron {
@@ -40,6 +41,12 @@ body {
     padding: 0 5px;
 }
 
+.cityAlert{
+    color: #04284E;
+    border: 4px solid #AECCEA;
+    border-radius: 5px;
+}
+
 .icons {
     transform: translateX(5px);
 }
@@ -63,11 +70,76 @@ footer a:hover {
 @media screen and (min-width:375px){
 
 .home h1{
-    font-size: 50px;
+    font-size: 42px;
 }
 
 .home p{
-    font-size: 18px ;
+    font-size: 20px ;
 }
+
+}
+
+@media screen and (min-width:425px){
+    .home h1{
+        font-size: 50px;
+    }
+    
+    .home p{
+        font-size: 20px ;
+    }
+
+}
+
+@media screen and (min-width:768px){
+    .home h1{
+        font-size: 74px;
+    }
+    
+    .home p{
+        font-size: 34px ;
+    }
+
+    .icons{
+        font-size: 30px;
+    }
+
+    .values{
+        font-size: 25px;
+    }
+
+    .media img{
+        width: 90px;
+        height: 90px;
+    }
+
+    .icon-label{
+        font-size: 25px;
+    }
+
+    .cityAlert{
+        font-size: 30px;
+    }
+    
+    footer{
+        font-size: 30px;
+        bottom: 0;
+        left: 0;
+    }
+
+    form input ,
+    form button{
+        height: 60px !important;
+        font-size: 30px !important;
+    }
+
+
+    .btn-lg{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width:1280px){
+
+
 
 }
