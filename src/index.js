@@ -29,7 +29,6 @@ const wind = new Array();
 const baseURL = "http://api.openweathermap.org/data/2.5/";
 //const apiKey = process.env.API_KEY;
 const apiKey ="9dbc6ef71ee7d0814e313bbe5e2f5dcb";
-
 /*La funzione si occupa di fare la richiesta all'API sottoforma di if...else per poter
 individuare gli errori piu comuni: quando accidentalmente si preme enter e la barra di 
 ricerca risulta vuota e quando si sbaglia a digitare un luogo o questo non esiste*/
@@ -106,7 +105,7 @@ function displayWeather() {
         document.getElementsByClassName("day")[0].textContent = "TODAY";
         document.getElementsByClassName("max_temp_display")[i].textContent = Math.floor(tempMax[i]) + "C°";
         document.getElementsByClassName("min_temp_display")[i].textContent = Math.floor(tempMin[i]) + "C°";
-        document.getElementsByClassName("wind_display")[i].textContent = wind[i];
+        document.getElementsByClassName("wind_display")[i].textContent = wind[i].toFixed(2);
     }
     window.scrollTo(0, 0); //Scroll on top if u are displain another city then u active geoLoc
 }
