@@ -27,8 +27,7 @@ const daysOfWeek = new Array();
 const wind = new Array();
 
 const baseURL = "http://api.openweathermap.org/data/2.5/";
-//const apiKey = process.env.API_KEY;
-const apiKey ="9dbc6ef71ee7d0814e313bbe5e2f5dcb";
+const apiKey = process.env.API_KEY;
 /*La funzione si occupa di fare la richiesta all'API sottoforma di if...else per poter
 individuare gli errori piu comuni: quando accidentalmente si preme enter e la barra di 
 ricerca risulta vuota e quando si sbaglia a digitare un luogo o questo non esiste*/
