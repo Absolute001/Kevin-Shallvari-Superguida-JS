@@ -100,6 +100,11 @@ function displayWeather() {
             media[i].style.backgroundImage = "linear-gradient(to bottom right ,#AECCEA, #EDEDED 90%)";
             iconLabel[i].textContent = "Clouds";
         }
+        else if (forecast[i] === "Snow"){
+            dayBg[i].src = "img/snow.svg";
+            media[i].style.backgroundImage = "linear-gradient(to bottom right ,#2f8db3, #5ba5c2 90%)";
+            iconLabel[i].textContent = "Snow";
+        }
         document.getElementsByClassName("day")[i].textContent = daysOfWeek[i];
         document.getElementsByClassName("day")[0].textContent = "TODAY";
         document.getElementsByClassName("max_temp_display")[i].textContent = Math.floor(tempMax[i]) + "C°";
